@@ -23,6 +23,7 @@ export default {
         { title: "Info1", description: "vmfdmovm", price: 44 },
         { title: "Info2", description: "vmfdmovm", price: 56 },
         { title: "Info3", description: "vmfdmovm", price: 123 },
+        { title: "Info4", description: "vmfdmovm", price: 123 },
       ],
     };
   },
@@ -49,10 +50,24 @@ export default {
 }
 .swiper-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+
 }
 .swiper-slide {
-  margin-right: 20px;
-  margin-left: 20px;
+  border: 1px solid #b48caa;
+  width: 250px;
+  height: fit-content;
+  background-color: white;
+  color: black;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+.swiper-slide:hover {
+  scale: 1.1;
+}
+
+.swiper-slide > img {
+  width: 100%;
 }
 </style>

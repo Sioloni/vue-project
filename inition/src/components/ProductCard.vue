@@ -1,10 +1,8 @@
 <template>
-  <div class="section-product-card">
-    <div class="product-details">
-      <img :src="image" alt="" />
-      <p class="title">{{ title }}</p>
-      <p class="price">{{ price }} $</p>
-    </div>
+  <img :src="image" alt="" />
+  <div class="product-details">
+    <p class="title">{{ title }}</p>
+    <p class="price">{{ price }} $</p>
   </div>
 </template>
 
@@ -27,33 +25,18 @@ export default {
 </script>
 
 <style>
-.section-product-card {
-  position: relative; /* Добавляем позиционирование для дочерних элементов */
-  border: 2px solid #b48caa;
-  width: 250px;
-  height: 300px;
-  background-color: white;
-  color: black;
-}
 
 .product-details {
-  position: absolute; /* Позиционируем детали */
-  bottom: 0;
-  left: 0;
-  padding: 10px;
+  padding: 20px;
 }
 
 .title {
   color: #b48caa;
-  font-size: 30px;
-  margin-bottom: 5px;
+  font-size: 26px;
 }
 
 .price {
   color: #b48caa;
 }
-.product-details img {
-  width: 250px;
-  height: 100px;
-}
+
 </style>
